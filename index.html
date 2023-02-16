@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Plants </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/favicon.ico" title="Plants">
+    <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="./assets/logo_vector.svg" alt="logo-plant" id="logo-img">
+                    <p id="logo-text">Plants</p>
+                </div>
+                <div class="toggle">
+                    <div class="line1 lines"></div>
+                    <div class="line2 lines"></div>
+                    <div class="line3 lines"></div>
+                    <div class="line4 lines"></div>
+                </div>
+                <ul class="nav-list" id="header-nav">
+                    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#AboutUs" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="#Service" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="#Price" class="nav-link">Price</a></li>
+                    <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+            <section class="welcome-container" id="Home">
+                    <img src="./assets/leafs.svg" alt="Leaves-Welcome" id="Welcome-Logo">
+                    <div class="Welcome-section">
+                        <h2 class="Welcome-text">We grow <span id="plants">plants</span> and give you oxygen</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <button id="LearnMore-button">LEARN MORE</button>
+                    </div>
+                </section>
+            <section class="about-container" id="AboutUs">
+                <div class="About-section">
+                    <h2 class="about-title">We are <span class="AboutEssentialText">professional experienced</span> gardeners</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                </div>
+                <img src="./assets/houseplant1.svg" alt="Plant" id="About-Logo">
+            </section>
+            <section class="service-container" id="Service">
+                <div class="Service-section">
+                    <h2 class="Service-text">Service and our projects</h2>    
+                </div>
+                <div class="btn-list">
+                    <button class="Service-button">Gardens</button>
+                    <button class="Service-button">Lawn</button>
+                    <button class="Service-button">Planting</button>
+                </div>  
+                <div class="image-list">
+                    <div class="item">
+                        <img src="./assets/first.jpg" alt="first" class="service-image">
+                        <div class="rect">
+                            <p class="service-item-text">Garden Care</p>
+                            <p class="service-item-signature">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/second.jpg" alt="second" class="service-image">
+                        <div class="rect">
+                            <p class="service-item-text">Planting</p>
+                            <p class="service-item-signature">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/third.jpg" alt="third" class="service-image">
+                        <div class="rect">
+                            <p class="service-item-text">Lawn Care</p>
+                            <p class="service-item-signature">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/fourth.jpg" alt="fourth" class="service-image">
+                        <div class="rect">
+                            <p class="service-item-text">Planting</p>
+                            <p class="service-item-signature">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/fivth.jpg" alt="fivth" class="service-image">
+                        <div class="rect">
+                            <p class="service-item-text">Garden Care</p>
+                            <p class="service-item-signature">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/sixth.jpg" alt="sixth" class="service-image">
+                        <div class="rect">
+                            <p class="service-item-text">Planting</p>
+                            <p class="service-item-signature">Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="prices-container" id="Price">
+                <div class="Prices-section">
+                    <h2 class="Prices-text">Prices</h2>  
+                    <div class="prices-rectangle">
+                        <div class="prices-cascade-rect" id="rect">
+                            <p class="prices-rect-text">Basics</p>
+                            <div class="rect-btn" id="rect-btn-1" onclick="switchRectangle('rect', 'rect-btn-1', 'prices-rect-border', 'text', 'price', 'button')"></div>
+                            <div class="prices-rect-border" id="prices-rect-border"></div>
+                            <p class="prices-rect-active-text" id="text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p class="prices-rect-active-price" id="price"><span class="highlighted-price">$15</span> &#160;/ per hour</p>
+                            <button class="prices-active-btn" id="button">Order</button>
+                        </div>
+                        <div class="prices-cascade-rect" id="rect-2">
+                            <p class="prices-rect-text">Standard</p>
+                            <div class="rect-btn" id="rect-btn-2" onclick="switchRectangle('rect-2', 'rect-btn-2', 'prices-rect-border-2', 'text-2', 'price-2', 'button-2')"></div>
+                            <div class="prices-rect-border" id="prices-rect-border-2"></div>
+                            <p class="prices-rect-active-text" id="text-2">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p class="prices-rect-active-price" id="price-2"><span class="highlighted-price">$25</span> &#160;/ per hour</p>
+                            <button class="prices-active-btn" id="button-2">Order</button>
+                        </div>
+                        <div class="prices-cascade-rect" id="rect-3">
+                            <p class="prices-rect-text">Pro care</p>
+                            <div class="rect-btn" id="rect-btn-3" onclick="switchRectangle('rect-3', 'rect-btn-3', 'prices-rect-border-3', 'text-3', 'price-3', 'button-3')"></div>
+                            <div class="prices-rect-border" id="prices-rect-border-3"></div>
+                            <p class="prices-rect-active-text" id="text-3">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p class="prices-rect-active-price" id="price-3"><span class="highlighted-price">$35</span> &#160;/ per hour</p>
+                            <button class="prices-active-btn" id="button-3">Order</button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="Prices-right-part">
+                    <h2 class="prices-right-part-text">
+                        Our best gardeners are ready to help you
+                    </h2>
+                    <button class="prices-btn">Contact us</button>
+                    <img src="./assets/leafs.svg" alt="leaves" style="width: 162px;height: 175px;margin-left: 135px;" id="Prices-img">
+                </div>
+            </section>
+            <section class="contacts-container" id="Contacts">
+                <div class="contact-woman"></div>
+                    <h2 class="contacts-title">Contact us</h2>
+                    <div class="dropdown-section">
+                        <div class="contacts-rectangle" id="contacts-rectangle">
+                            <p class="contacts-rect-text" id="contacts-rect-text">City</p>
+                            <div class="contacts-btn" id="contacts-btn" onclick="Dropdown()"></div>                          
+                        </div>
+                        <div class="dropdown">
+                            <div id="myDropdown" class="dropdown-content">
+                                <p id="first-drop-item" onmouseenter="HighlightBorder('border-1')" onmouseleave="Ret('border-1')" onclick="ChoiceOfDropdown(this)"> Canandaigua, NY</p>
+                                <div class="dropdown-content-border" id="border-1"></div>
+                                <p onmouseenter="HighlightBorder('border-2')" onmouseleave="Ret('border-2')" onclick="ChoiceOfDropdown(this)"> New York City</p>
+                                <div class="dropdown-content-border" id="border-2"></div>
+                                <p onmouseenter="HighlightBorder('border-3')" onmouseleave="Ret('border-3')" onclick="ChoiceOfDropdown(this)"> Yonkers, NY</p>
+                                <div class="dropdown-content-border" id="border-3"></div>
+                                <p onmouseenter="HighlightBorder('border-4')" onmouseleave="Ret('border-4')" onclick="ChoiceOfDropdown(this)"> Sherrill, NY</p>
+                                <div class="dropdown-content-border" id="border-4"></div>
+                            </div>
+                        </div>
+                        <div class="city-card">
+                            <div class="city-info">
+                                <div class="city-text-section">
+                                    <p class="city-text">City:</p>
+                                    <p class="city-text-value" id="City">TextToSwap</p>
+                                </div>
+                                <div class="city-text-section">
+                                    <p class="city-text">Phone:</p>
+                                    <p class="city-text-value" id="Phone">TextToSwap</p>
+                                </div>
+                                <div class="city-text-section">
+                                    <p class="city-text" id="Address-key">Office address:</p>
+                                    <p class="city-text-value" id="Address">TextToSwap</p>
+                                </div>
+                                <div class="contacts-btn-section">
+                                    <div class="city-card-btn">Call us</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    </main>
+
+    <footer class="footer-container">
+            <div class="left-part-foot">
+                <p class="nav-left-part">&#169;</p>
+                <p class="nav-left-part">2022</p>
+                <a href="https://github.com/Mouz24" target="_blank" class="nav-left-part">Mouz24</a>
+            </div>
+            <a href="https://rs.school/js/" target="_blank" id="github-link">Rolling Scopes School</a>
+            <div class="social-networks">
+                <a href="https://instagram.com" target="_blank"><img src="assets/inst1.svg" class="social-img" alt="instagram"></a>
+                <a href="https://facebook.com" target="_blank"><img src="assets/fb1.svg" class="social-img" alt="facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="assets/tw1.svg" class="social-img" alt="twitter"></a>
+                <a href="https://pinterest.com" target="_blank"><img src="assets/pinterest1.svg" class="social-img" alt="pinterest"></a> 
+            </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
